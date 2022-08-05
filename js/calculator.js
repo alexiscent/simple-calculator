@@ -50,12 +50,13 @@ function clear() {
     prevNumber = null;
     operation = null;
     curNumber = null;
-    display(0);
+    display();
 }
 
 function display(content) {
     const displayEl = document.getElementById('display');
-    displayEl.innerText = content.toString().slice(0, 19);
+    if (content) displayEl.innerText = content.toString().slice(0, 19);
+    else displayEl.innerText = 0;
     return displayEl.innerText;
 }
 
