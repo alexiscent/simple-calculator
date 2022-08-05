@@ -123,8 +123,10 @@ function appendNumber() {
 }
 
 function appendPeriod() {
-    if (curNumber && !isNaN(+(curNumber + '.'))) {
+    if (!isNaN(+(curNumber + '.'))) {
         curNumber += '.';
+    } else if (!curNumber) {
+        curNumber = '0.';
     }
     display(curNumber);
 }
