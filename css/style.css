@@ -62,13 +62,6 @@ body
     line-height: 0;
 }
 
-#buttons
-{
-    display: grid;
-    gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
 #clear      { grid-area: clear; }
 #back       { grid-area: back; }
 #divide     { grid-area: divide; }
