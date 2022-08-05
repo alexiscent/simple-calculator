@@ -39,8 +39,8 @@ body
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         'display display display display'
-        'clear divide multiply subtract'
-        'num_7 num_8 num_9 add'
+        'clear back divide multiply'
+        'num_7 num_8 num_9 subtract'
         'num_4 num_5 num_6 add'
         'num_1 num_2 num_3 equals'
         'num_0 num_0 period equals';
@@ -70,6 +70,7 @@ body
 }
 
 #clear      { grid-area: clear; }
+#back       { grid-area: back; }
 #divide     { grid-area: divide; }
 #multiply   { grid-area: multiply; }
 #subtract   { grid-area: subtract; }

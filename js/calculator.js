@@ -44,6 +44,8 @@ function addOperations() {
     }
     const periodBtn = document.getElementById('period');
     periodBtn.addEventListener('click', appendPeriod);
+    const backBtn = document.getElementById('back');
+    backBtn.addEventListener('click', backspace);
 }
 
 function clear() {
@@ -128,5 +130,11 @@ function appendPeriod() {
     } else if (!curNumber) {
         curNumber = '0.';
     }
+    display(curNumber);
+}
+
+function backspace() {
+    if (!curNumber) return;
+    curNumber = curNumber.slice(0, -1)
     display(curNumber);
 }
