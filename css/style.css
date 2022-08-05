@@ -58,7 +58,8 @@ body
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 50px;
+    font-size: 40px;
+    line-height: 0;
 }
 
 #buttons
